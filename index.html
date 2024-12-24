@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Foodies</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+    <div class="social-icons">
+      <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for food..." />
+    </section>
+
+    <section class="filters">
+      <h3>Filter by Category</h3>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="local">Local</option>
+        <option value="international">International</option>
+      </select>
+    </section>
+
+    <section class="menu" id="menu">
+      <!-- Menu items will be dynamically loaded -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
